@@ -84,32 +84,22 @@ unsigned int tabspaces = 4;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"#000000",
-	"red3",
-	"green3",
-	"yellow3",
-	"#eeeeee",
-	"#eeeeee",
-	"#eeeeee",
-	"#eeeeee",
-
-	/* 8 bright colors */
-	"#eeeeee",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"#ffffff",
-	"#ffffff",
-	"#ffffff",
-
-	[255] = 0,
-
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#eeeeee",
-	"#ffffff",
-};
+  "#ffffff", /* base00 */
+  "#ff0086", /* base08 */
+  "#00c918", /* base0B */
+  "#aba800", /* base0A */
+  "#3777e6", /* base0D */
+  "#ad00a1", /* base0E */
+  "#1faaaa", /* base0C */
+  "#101010", /* base05 */
+  "#b0b0b0", /* base03 */
+  "#fd8900", /* base09 */
+  "#e0e0e0", /* base01 */
+  "#d0d0d0", /* base02 */
+  "#000000", /* base04 */
+  "#151515", /* base06 */
+  "#cc6633", /* base0F */
+  "#202020", /* base07 */};
 
 
 /*
@@ -118,8 +108,8 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 7;
 unsigned int defaultbg = 0;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+static unsigned int defaultcs = 13;
+static unsigned int defaultrcs = 0;
 
 /*
  * Default shape of cursor
